@@ -12,7 +12,16 @@ total_minutes = total_episodes * episode_length_minutes
 total_hours = total_minutes / 60
 total_days = total_hours / 24
 
+if total_days >= 7:
+    episodes_per_day = total_episodes / total_days
+    print(f'Episodes per day: {episodes_per_day}')
+
 # Output
 print(f"\nTo binge-watch {series_name} you need:")
 print(f"{total_hours:.1f} hours")
 print(f"That's {total_days:.1f} full days of your life!")
+
+if total_days >= 7:
+    episodes_per_day = total_episodes / total_days
+    print(f'Episodes per day: {episodes_per_day}')
+    print("Damn, go touch some grass")
