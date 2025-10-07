@@ -20,10 +20,10 @@ elif enemies_defeated < 0:
 
 
 # Selection logic
-if player_score >= 10000 and time_played_hours >= 50:
-    achievement = "Master Player"
-elif player_score >= 15000 and time_played_hours >= 100:
+if player_score >= 15000 and time_played_hours >= 100:
     achievement = "Legend"
+elif player_score >= 10000 and time_played_hours >= 50:
+    achievement = "Master Player"
 elif enemies_defeated >= 1000:
     achievement = "Combat Expert"
 elif time_played_hours >= 20:
